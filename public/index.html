@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlCar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+<nav class="nav justify-content-center  ">
+  <a class="nav-link active" href="#" aria-current="page">Home</a>
+  <a class="nav-link" href="#">Login</a>
+  <a class="nav-link" href="#">Coches</a>
+  
+</nav>
+
+        <nav>
+            <ul>
+                <li>
+                    Home
+            </li>
+            <li>
+                Login
+            </li>
+            <li>
+                Coches
+            </li>
+            <li>
+                <icon>Lupa</icon>
+                <input type="textbox">
+            </li>
+            <li>
+                <button>Buscar</button>
+            </li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <h1>AlCar - Alquiler de Vehículos</h1>
+        <div>
+            <img src="../src/peugeot.png" alt="peugeot">
+        </div>
+        <div class="card text-start">
+          <img class="card-img-top" src="holder.js/100px180/" alt="Title">
+          <div class="card-body">
+            <h4 class="card-title">¿Quiénes Somos?</h4>
+            <p class="card-text">Somos una empresa dedicada al alquiler
+                de vehículos de cualquier gama o tipo.
+                A diferencia del resto de la competencia,
+                permitimos a nuestros clientes acceder a
+                cualquier circuito legal siempre y cuando se hagan cargo de los gastos</p>
+          </div>
+        </div>
+        <div>
+            <h3>Modelos más alquilados</h3>
+            <div id="most-rentend" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#most-rentend" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+                    <li data-bs-target="#most-rentend" data-bs-slide-to="1" aria-label="Second slide"></li>
+                    <li data-bs-target="#most-rentend" data-bs-slide-to="2" aria-label="Third slide"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="holder.js/900x500/auto/#777:#555/text:First slide" class="w-100 d-block" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="holder.js/900x500/auto/#666:#444/text:Second slide" class="w-100 d-block" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="holder.js/900x500/auto/#666:#444/text:Third slide" class="w-100 d-block" alt="Third slide">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#most-rentend" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#most-rentend" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        ¢ AlCar 2023 S.L.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+</html>
