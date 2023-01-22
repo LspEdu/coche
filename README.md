@@ -11,7 +11,7 @@
 [Incluye la descripción de tu proyecto.]
 
 ## PROTOTIPO<a name="id2"></a>
-[Incluye el enlace a tu prototipo realizado en Figma.]
+https://www.figma.com/file/aj9m6brUseMNBsZrxzIWMW/Untitled?node-id=0%3A1&t=TiLaWEDDc3stZKMC-1
 
 ## MODIFICACIONES A LA GUÍA DE ESTILOS<a name="id3"></a>
 [Listado de modificaciones realizadas debidadmente justificadas. ]
