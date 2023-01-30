@@ -46,74 +46,110 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*
-nav{
-    position:relative;
-    margin:0;
-    background-color: teal;
-}
-nav ul
-{
-    list-style: none;
-}
-nav ul li
-{
-    display: inline;
-    margin:auto;
-}
-.nav{
-    background-color: teal;
-}
-.nav a{
-    color:white;
-}
-.nav a:hover{
-    color:black;
-}
-.logo{
-    width: 4em;
+body {
+    height: 100vh;
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: 'Roboto', sans-serif;
+    gap: 10px;
+    grid-template-areas: "nav"
+                         "main"
+                         "footer";
 }
 
-
-.buscar{
-    float:right;
-    margin: 10px;
-}
-
-.btn-buscar{
-    border-style: 1px solid black;
-}
-
-main{
-    display: grid;
-    grid-template-columns: 3px 10fr;
-}
-
-.coche{
-    
+header {
     grid-row: 1;
-    grid-column: 2/3;
-    float:left;
-}
-
-.card{   
-    grid-row: 1;
-    grid-column: 1/3;
-    float:right;
-    background-color: rgb(92, 91, 91);
-
+    height: 5.5em;
+    grid-area: nav;
 }
 
 footer{
-    left: 0;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    background-color: teal;
+    height: 2em;
+    width: 100vw;
+    grid-row: 3;
+    background-color: #566069;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
 }
 
-footer p {
-    text-align: center;
+main{
+    grid-row: 2;
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "title title"
+                         "peu peu card" 
+                         "peu peu card"; 
+
 }
-*/
+
+/* EMPIEZO EL NAV */
+nav {
+    position: relative;
+    grid-column: 1/3 ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 15fr 1fr 1fr; /* 13 unidades  7 columnas */
+    background-color:  #566069;
+    height: 5.5em;
+    align-items: center;
+    justify-items: center;
+}
+
+nav div img {
+    border: 0.5pt solid white;
+    border-radius: 10%;
+    width: 5em;
+    height: 5em;
+}
+nav div a{
+    color:white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.busq{
+    display: grid;
+    grid-template-columns: 75%  25%;
+    gap: 10px;
+    align-items: center;
+}
+.cuadrado{
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    gap:1px;
+    background-color: white;
+    align-items: center;
+    border-radius: 10px;
+}
+.busq div input[type="text"]{
+    border-radius: 10px;
+    height: 3em;
+    min-width: 20em;
+    font-size: large;
+    border-style: none;
+    color: #566069;
+}
+.busq div input[type="text"]:focus{
+    outline: none;
+}
+.cuadrado span{
+    font-size: xx-large;
+    color: #566069;
+}
+.buscar{
+    height: 4em;
+    width: 9em;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #69859D ;
+}
+.buscar a{
+    font-family: 'Roboto' sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+
+/*ACABO EL NAV*/
