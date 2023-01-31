@@ -135,6 +135,7 @@ input[type="text"]:not(.cuadrado input):focus {
     grid-column: 1/3;
 }
 .perm div {
+    overflow: auto;
     border-radius: 25px;
     border: 1.8px solid #566069;
     box-shadow: 1px 3px 5px #69859D;

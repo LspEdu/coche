@@ -2,6 +2,7 @@ main{
     grid-row: 2;
     grid-area: main;
     display: grid;
+    gap: 2em;
 
 
 }
@@ -11,7 +12,9 @@ main{
     main {
         grid-template-areas: "title"
                              "peu"
-                             "card";
+                             "scroll"
+                             "card"
+                             ;
         gap: 3em;
     }
 
@@ -24,7 +27,8 @@ main{
     main {
         grid-template-areas: ". title title card" 
                              "peu peu peu card"
-                             "peu peu peu card";
+                             "peu peu peu card"
+                             ". scroll scroll scroll ";
     }
 
 }
@@ -98,3 +102,45 @@ main{
     font-size: 3em;
     color:#566069
 }
+
+.scrl {
+    grid-area: scroll;
+    width: 80em;
+}
+
+.scrl h1 {
+    color: #566069;
+    font-size: 3em;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.scrollmost {
+    height: 200px;
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    
+}
+.coche {
+    display: inline-block;
+    align-self: center;
+    border:2px solid #566069;
+    width: 300px;
+    height: 150px;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #69859D;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #7575758a;
+    border-radius: 10px;
+}
+
