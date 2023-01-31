@@ -1,97 +1,22 @@
 main {
     font-family: 'Roboto', sans-serif;
     display: grid;
-    grid-template-columns: 1fr 8fr ;
-    grid-row: 20% 80%;
-    gap: 2em;
     position: relative;
-}
 
-
-
-/* EMPIEZO EL NAV */
-nav {
-    position: relative;
-    grid-column: 1/6 ;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 15fr 1fr 1fr; /* 13 unidades  7 columnas */
-    background-color:  #566069;
-    height: 5.5em;
-    align-items: center;
-    justify-items: center;
-}
-
-nav div img {
-    border: 0.5pt solid white;
-    border-radius: 10%;
-    width: 5em;
-    height: 5em;
-}
-
-nav div a {
-    color:white;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.busq {
-    display: grid;
-    grid-template-columns: 75%  25%;
-    gap: 10px;
-    align-items: center;
-}
-
-.cuadrado {
-    display: grid;
-    grid-template-columns: 1fr 9fr;
-    gap:1px;
-    background-color: white;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.busq div input[type="text"] {
-    border-radius: 10px;
-    height: 3em;
-    min-width: 20em;
-    font-size: large;
-    border-style: none;
-    color: #566069;
-}
-
-.busq div input[type="text"]:focus {
-    outline: none;
-}
-
-.cuadrado span {
-    font-size: xx-large;
-    color: #566069;
-}
-
-.buscar {
-    height: 4em;
-    width: 9em;
-    border-radius: 10px;
-    border-style: none;
-    background-color: #69859D ;
-}
-
-.buscar a {
-    font-family: 'Roboto' sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
+    grid-template-areas : ". fiel .";
 
 }
 
-/*ACABO EL NAV*/
-
-.space {
-    position: relative;
-    height: 10px;
-    grid-column: 1/6;
+@media screen and (max-width: 1024px) {
+    main {
+        grid-template-areas:"fiel fiel"
+                  "fiel fiel";
+    }
 }
+
+
 fieldset {
-    grid-column: 2;
+    grid-area: fiel;
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     border: 2px solid #4B545B;
@@ -101,17 +26,20 @@ fieldset {
     
     
 }
-fieldset .space{
-    height: 10px;
+
+fieldset .space {
+    height: 4px;
+    grid-column: 1/4;
 }
+
 .factura {
     grid-column: 2/3;
-    gap: 10px 10px;
     border: 2px solid #BDBDBD;
     border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr;
     text-indent: 10px;
+    height: 10em;
 }
 
 .factura:last-child {

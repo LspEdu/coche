@@ -1,11 +1,13 @@
+main{
+    grid-row: 2;
+    grid-area: main;
+    display: grid;
 
+
+}
 
 @media screen and (max-width: 1024px) {
-    body {
-        grid-template-areas: "nav"
-                             "main"
-                             "footer";
-    }
+
     main {
         grid-template-areas: "title"
                              "peu"
@@ -15,16 +17,16 @@
 
 
 
-
 }
 
 
 @media screen and (min-width: 1024px) {
     main {
-        grid-template-areas: ". . title card" 
+        grid-template-areas: ". title title card" 
                              "peu peu peu card"
                              "peu peu peu card";
     }
+
 }
 
 

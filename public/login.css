@@ -2,101 +2,41 @@ main {
 
     font-family: 'Roboto', sans-serif;
     display: grid;
-    grid-template-columns: 29% 40% 20%;
-    grid-row: 20% 80%;
+    grid-template-areas: ". . ."
+                         ". login ."
+                         ". login . "  
+                         ". login .";
     gap: 2em;
     position: relative;
 }
 
-/* EMPIEZO EL NAV */
-nav {
-    position: relative;
-    grid-column: 1/5;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 15fr 1fr 1fr;
-    /* 13 unidades  7 columnas */
-    background-color: #566069;
-    height: 5.5em;
-    align-items: center;
-    justify-items: center;
+@media screen and (max-width: 1024px) {
+    main {
+        grid-column: 1fr;
+        grid-template-areas: "login";
+    }
+    fieldset {
+        position: absolute;
+
+    }
 }
 
-nav div img {
-    border: 0.5pt solid white;
-    border-radius: 10%;
-    width: 5em;
-    height: 5em;
-}
 
-nav div a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.busq {
-    display: grid;
-    grid-template-columns: 75% 25%;
-    gap: 10px;
-    align-items: center;
-}
-
-.cuadrado {
-    display: grid;
-    grid-template-columns: 1fr 9fr;
-    gap: 1px;
-    background-color: white;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.busq div input[type="text"] {
-    border-radius: 10px;
-    height: 3em;
-    min-width: 20em;
-    font-size: large;
-    border-style: none;
-    color: #566069;
-}
-
-.busq div input[type="text"]:focus {
-    outline: none;
-}
-
-.cuadrado span {
-    font-size: xx-large;
-    color: #566069;
-}
-
-.buscar {
-    height: 4em;
-    width: 9em;
-    border-radius: 10px;
-    border-style: none;
-    background-color: #69859D;
-}
-
-.buscar a {
-    font-family: 'Roboto' sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-
-}
-
-/*ACABO EL NAV*/
-
-fieldset{
-    position: relative;
+fieldset {
+    position: absolute;
     border: 4px solid #566069;
     display: grid;
+    width: 30vw;
+    height: 300px;
+    justify-self: center;
     align-items: center;
-
+    grid-area: login;
     border-radius: 39px;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 4fr 1fr 6fr;
 }
 
-fieldset h1{
+fieldset h1 {
     grid-column: 1/4;
     justify-self: center;
     font-family: 'Roboto Condensed' ,  sans-serif;
@@ -105,13 +45,13 @@ fieldset h1{
     font-weight: 800;
 }
 
-.line{
+.line {
     grid-column: 1/4;
     border:2px solid #566069;
     width: 100%;
 }
 
-.log{
+.log {
     grid-column: 2/3;
     margin: auto;
     display: grid;
@@ -121,13 +61,19 @@ fieldset h1{
     font-size: larger;
     font-family: 'Roboto' , sans-serif;
     color: #69859D;
-    font-weight: bold;
+    font-weight: 900;
 }
 .log input {
     width: 30em;
     height: 2em;
     border-radius: 10px ;
     border: 2px solid #69859D;
+    color:#69859D;
+    font-weight: 700;
+}
+.log input:focus {
+    outline: none;
+    border: 3px solid #69859D
 }
 
 .log + div {
@@ -139,23 +85,35 @@ fieldset h1{
 }
 
 .reg ,
-.login{
+.login {
     border-style: none;
     height: 2rem;
     border-radius: 5px;
     width: 10em;
+    transition: 0.3s;
 }
 .reg a, .login a {
     color: white;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: large;
 }
-.reg{
+.reg {
     margin: auto ;
     grid-column: 2/3;
-    background-color: #D6D6D6;
+    background-color: #566069;
 }
-.login{
+
+.reg:hover{
+    background-color: #9c9c9c;
+}
+
+.login {
     margin: auto;
     grid-column: 4/5;
     background-color: #69859D;
+}
+.login:hover {
+    background-color: #8bafcf;
 }

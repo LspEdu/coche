@@ -75,15 +75,7 @@ footer{
     grid-area: footer;
 }
 
-main{
-    grid-row: 2;
-    grid-area: main;
-    display: grid;
-    grid-template-areas: "title title"
-                         "peu peu card" 
-                         "peu peu card"; 
 
-}
 
 /* EMPIEZO EL NAV */
 nav {
@@ -153,3 +145,11 @@ nav div a{
 }
 
 /*ACABO EL NAV*/
+
+@media screen and (max-width: 1024px) {
+    body {
+        grid-template-areas: "nav"
+                             "main"
+                             "footer";
+    }
+}
