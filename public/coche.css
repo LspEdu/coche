@@ -1,0 +1,180 @@
+main {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-template-areas: "tit  tit"
+                         "co  res"
+                         "dat res";
+    column-gap: 5em;
+    
+}
+
+.title {
+    grid-area: tit;
+
+}
+
+.title h1 {
+    font-size: 4em;
+    color:#566069;
+    font-family: 'Roboto ' ,sans-serif;
+    font-weight: bolder;
+    font-stretch: ultra-expanded;
+}
+
+.coche {
+    grid-area: co;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.coche img {
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgb(196, 194, 194);
+}
+
+.datos {
+    width: 80%;
+    grid-area: dat;
+    border: 1px solid #69859D;
+    border-radius: 20px;
+    display: flex;
+    background-color: #F5F5F5;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nam {
+    color: #2F3439;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.val {
+    color: #4B545B;
+    padding-right: 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.reservas {
+    grid-area: res;
+    border: 2px solid #69859D;
+    border-radius: 20px;
+    display: grid;
+    padding: 1em 1.5em ;
+    grid-template-rows: 1fr 3fr 1fr 1fr;
+    gap: 1em;
+    grid-template-areas: "fec fec"
+                         "cal cal"
+                         "km km"
+                         "inp inp";
+}
+
+
+
+.fec {
+    grid-area: fec;
+    display: flex;
+    justify-content: space-around; /* EN MEDIA QUERY CONVERTIR A space-between */
+    flex-wrap: wrap;
+}
+
+.fec div {
+    font-size: 2em;
+}
+
+.fec div label {
+    color:#4B545B;
+    font-weight: 700;
+}
+
+.fec div input[type="date"] {
+
+    border: 2px solid #4B545B;
+    border-radius: 10px;
+    color: #69859D;
+    width: 100%;
+    font-size: 1em;
+}
+
+.cal {
+    grid-area: cal;
+
+    border: 1px solid #69859D;
+    border-radius: 10px;
+    
+}
+
+.km {
+    grid-area: km;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.km label {
+    color:#4B545B;
+    font-weight: 700;
+}
+
+.km input[type="number"] {
+    height: 40px;
+    border: 2px solid #4B545B;
+    border-radius: 10px;
+    color: #69859D;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+
+.inp {
+    grid-area: inp;
+    display: flex;
+    justify-content: space-around; /* IGUAL QUE LA FECHA */
+    color: #4B545B;
+    font-size: 1.7em;
+    font-weight: 700;
+    flex-wrap: wrap;
+}
+
+.inp .sel,
+.inp .pre {
+    display: flex;
+    flex-direction: column;
+}
+
+.inp .pre {
+    gap: 1em;
+}
+
+.inp .pre button {
+    background-color: #2F3439;
+    color: #ADD69E;
+    height: 2em;
+    font-size: large;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.inp .pre button:hover {
+    background-color: #4d555e;
+    border: 1px solid #F5F5F5;
+    border-radius: 80% 10px 0px 80%;
+    color: #aecca3;
+    box-shadow: 2px 2px 0px #2F3439;
+}
