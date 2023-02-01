@@ -119,7 +119,6 @@ nav div a{
 .busq div input[type="text"]{
     border-radius: 10px;
     height: 3em;
-    min-width: 20em;
     font-size: large;
     border-style: none;
     color: #566069;

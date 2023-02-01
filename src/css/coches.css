@@ -9,6 +9,7 @@ main {
 .scrl {
     padding-left:100px ;
     width: 110em;
+    overflow: auto;
 }
 
 .scrl h1 {

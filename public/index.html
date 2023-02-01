@@ -13,13 +13,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/index.css">
+    <link rel="stylesheet" href="../src/css/navsmall.css">
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav id="big">
             <div><a href="./index.html"><img src="../src/alcar.png" alt=""></a></div>
             <div><a href="./index.html">Inicio</a></div>
             <div><a href="./login.html">Login</a></div>
@@ -33,6 +34,27 @@
                 <div><button class="buscar"><a href="">Buscar</a></button></div>
             </div>
         </nav>
+        <nav role="navigation" id="small">
+            <div id="menuToggle">
+              <input type="checkbox"/>
+              <span></span>
+              <span></span>
+              <span></span>
+            <ul id="menu">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="./login.html">Login</a></li>
+              <li><a href="./login.html">Coches</a></li>
+              <li><div class="busq">
+                <div class="cuadrado">
+                    <span id="lupa" class="material-symbols-outlined">search</span>
+                    <input type="text" placeholder="Lexus, Toyota">
+                </div>
+                <div><button class="buscar"><a href="">Buscar</a></button></div>
+            </div></li>
+            </ul>
+           </div>
+           <div><a href="./index.html"><img src="../src/alcar.png" alt=""></a></div>
+          </nav>
     </header>
     <main>
         <div class="title">
@@ -50,7 +72,7 @@
             </div>
         </div>
         <div class="peu">
-            <img src="../src/peugeot208.jpeg" alt="">
+            <img src="../src/peugeot208.png" alt="">
             <span> Peugeot 208</span>
         </div>
 
@@ -61,6 +83,14 @@
                 <a href="./coche.html" class="coche">
                     <img src="../src/mclaren540c.jpeg" alt="">
                         <span>McLaren 540c</span>
+                </a>
+                <a href="./coche.html" class="coche">
+                    <img src="../src/mclaren540c.jpeg" alt="">
+                        <span>BMW M8</span>
+                </a>
+                <a href="./coche.html" class="coche">
+                    <img src="../src/mclaren540c.jpeg" alt="">
+                        <span>BMW M8</span>
                 </a>
                 <a href="./coche.html" class="coche">
                     <img src="../src/mclaren540c.jpeg" alt="">
