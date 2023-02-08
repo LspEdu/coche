@@ -119,8 +119,8 @@ fieldset h1 {
     border-radius: 5px;
     width: 10em;
     transition: 0.3s;
-}
-.reg a, .login a {
+    text-align: center;
+    padding-top: 10px;
     color: white;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
