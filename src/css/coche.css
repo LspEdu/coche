@@ -1,3 +1,7 @@
+body {
+    background-image: url(../Visiwig-Chevron-Alternates.svg);
+}
+
 main {
     padding: 2em;
     display: grid;
@@ -9,9 +13,46 @@ main {
     
 }
 
+@media screen and (max-width: 1024px) {
+    main{
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-areas: "tit"
+                             "co"
+                             "dat"
+                             "res";
+        row-gap: 30px;
+    }
+
+
+    .title {
+        width: 200px;
+    }
+
+    .datos {
+        padding: 10px;
+
+    }
+
+    .datos div {
+        gap: 10px;
+    }
+
+    .coche  img {
+     width: 50%;
+     margin-left: auto;
+     margin-right: auto;
+    }
+
+
+}
+
 .title {
     grid-area: tit;
-
+    width: 450px;
+    background-color: #F5F5F5;
+    border-radius: 50em;
+    box-shadow: 1px 10px 20px rgba(0,0,0,0.75);
 }
 
 .title h1 {
@@ -20,6 +61,7 @@ main {
     font-family: 'Roboto ' ,sans-serif;
     font-weight: bolder;
     font-stretch: ultra-expanded;
+    text-align: center;
 }
 
 .coche {
@@ -34,10 +76,11 @@ main {
 .coche img {
     width: 70%;
     border-radius: 10px;
-    box-shadow: 10px 10px 20px rgb(196, 194, 194);
+   
 }
 
 .datos {
+
     width: 80%;
     grid-area: dat;
     border: 1px solid #69859D;
@@ -46,6 +89,7 @@ main {
     background-color: #F5F5F5;
     flex-direction: row;
     justify-content: space-between;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.75);
 }
 
 .nam {
@@ -69,6 +113,7 @@ main {
 }
 
 .reservas {
+    background-color: #F5F5F5;
     grid-area: res;
     border: 2px solid #69859D;
     border-radius: 20px;
@@ -80,6 +125,7 @@ main {
                          "cal cal"
                          "km km"
                          "inp inp";
+                         box-shadow: 0px 10px 20px rgba(0,0,0,0.75);
 }
 
 
@@ -111,7 +157,10 @@ main {
 
 .cal {
     grid-area: cal;
-
+    background-image: url(../calendario.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     border: 1px solid #69859D;
     border-radius: 10px;
     
@@ -169,12 +218,28 @@ main {
     border: none;
     border-radius: 5px;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .inp .pre button:hover {
     background-color: #4d555e;
     border: 1px solid #F5F5F5;
-    border-radius: 80% 10px 0px 80%;
     color: #aecca3;
-    box-shadow: 2px 2px 0px #2F3439;
+}
+
+#con {
+    border: 2px solid #69859D;
+    height: 2em;
+    border-radius: 10px;
+    text-align: start;
+    padding-left: 10px;
+    color: #69859D;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: large;
+    cursor: pointer;
+}
+
+#con:focus {
+    outline: none;
 }

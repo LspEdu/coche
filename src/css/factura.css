@@ -1,3 +1,7 @@
+body {
+    background-image: url(../Visiwig-Chevron-Alternates.svg);
+}
+
 main {
     font-family: 'Roboto', sans-serif;
     display: grid;
@@ -16,6 +20,7 @@ main {
 
 
 fieldset {
+    background-color: #F5F5F5;
     grid-area: fiel;
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
