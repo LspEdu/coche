@@ -46,11 +46,16 @@ input[type="text"]:not(.cuadrado input){
     border: 1.8px solid #566069;
     box-shadow: 1px 3px 5px #69859D;
     left: 1em;
+    color: #69859D;
+    font-weight: 500;
+    font-size: large;
+    padding-left: 10px;
+    transition: 0.4s;
 }
 
 input[type="text"]:not(.cuadrado input):focus {
     outline:none;
-    border-width: 3px;
+
 }
 
 
@@ -108,41 +113,41 @@ input[type="text"]:not(.cuadrado input):focus {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.buttons button{
+.buttons a{
     border:none;
     border-radius: 10px;
-    width: 200px;
-    height: 56px;
+    width: 190px;
+    height: 23px;
     transition: 0.3s;
-}
-.buttons button a {
     text-decoration: none;
     color:white;
     font-family: 'Roboto' , sans-serif;
     font-weight: bold;
     font-size: 25px;  
+    text-align: center;
+    padding: 12px;
 }
-.buttons button:nth-child(1) {
+.buttons a:nth-child(1) {
     grid-column: 1/2;
     background-color: #566069;
 
 }
-.buttons button:nth-child(1):hover {
+.buttons a:nth-child(1):hover {
     background-color: #a5a5a5;
 }
-.buttons button:nth-child(1):active {
+.buttons a:nth-child(1):active {
     background-color: #7c7c7c;
 
 }
-.buttons button:nth-child(2) {
+.buttons a:nth-child(2) {
     grid-column: 3;
     background-color: #69859D;
 }
-.buttons button:nth-child(2):hover {
+.buttons a:nth-child(2):hover {
     grid-column: 3;
-    background-color: #728ea8;
+    background-color: #586d81;
 }
-.buttons button:nth-child(2):active {
+.buttons a:nth-child(2):active {
     grid-column: 3;
     background-color: #495c6d;
 }

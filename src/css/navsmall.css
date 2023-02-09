@@ -116,6 +116,7 @@ a {
     .busq {
         display: flex;
         flex-direction: column;
+        width: 210px;
     }
     .cuadrado {
         width: 100%;

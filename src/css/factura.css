@@ -90,13 +90,13 @@ fieldset .space {
     border:none;
     border-radius: 10px;
     transition: 0.3s;
-
-}
-.btn-fact a {
     text-decoration: none;
     color: white;
     font-family: 'Roboto Condensed',  sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 10px;
 }
 .factura-body-bottom p {
     grid-column: 3;
