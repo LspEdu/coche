@@ -8,19 +8,20 @@
 4. [RECURSOS](#id4)
 
 ## DESCRIPCIÓN<a name="id1"></a>
-[Incluye la descripción de tu proyecto.]
+    AlCar es una página de alquileres de coches de todas las gamas, permitiendo al cliente gestionar todo desde el día que lo recoge a qué coche está disponible en cada momento, pudiendo además ver sus anteriores compras en PDF.
 
 ## PROTOTIPO<a name="id2"></a>
-[Incluye el enlace a tu prototipo realizado en Figma.]
+    https://www.figma.com/file/aj9m6brUseMNBsZrxzIWMW/Untitled?node-id=0%3A1&t=TiLaWEDDc3stZKMC-1
 
 ## MODIFICACIONES A LA GUÍA DE ESTILOS<a name="id3"></a>
-[Listado de modificaciones realizadas debidadmente justificadas. ]
+    - Añadido un SVG de fondo
+    - Modificaciones necesarias para que sea adaptable a dispositivos móviles como navbar sandwich
+    - Formas en los Títulos
+    - Cambiamos el carrousel por un slider 
 
 ## RECURSOS<a name="id4"></a>
-[Listado de recursos usados]
 
-- Can I use?: https://caniuse.com/
-- Bootstrap: https://getbootstrap.com/
-- Tailwind: https://tailwindcss.com/docs
-- W3C CSS Validator: https://jigsaw.w3.org/css-validator/
-- W3C HTML Validator: https://validator.w3.org/
+    - CSS
+    - BS5 (login-bs.html)
+    - Google Fonts
+    - Mdn WebDocs

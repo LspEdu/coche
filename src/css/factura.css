@@ -1,0 +1,111 @@
+
+main {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    position: relative;
+
+    grid-template-areas : ". fiel .";
+
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        grid-template-areas:"fiel fiel"
+                  "fiel fiel";
+    }
+}
+
+
+fieldset {
+    background-color: #F5F5F5;
+    grid-area: fiel;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    border: 2px solid #4B545B;
+    border-radius: 15px;
+    font-size: 20px;
+    gap: 20px;
+    
+    
+}
+
+fieldset .space {
+    height: 4px;
+    grid-column: 1/4;
+}
+
+.factura {
+    grid-column: 2/3;
+    border: 2px solid #BDBDBD;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-indent: 10px;
+    height: 10em;
+}
+
+.factura:last-child {
+    margin-bottom: 20px;
+}
+
+.factura-head {
+    width: 100%;
+    background-color: #566069;
+    height: 70px;
+    border-radius: 9px 9px 0px 0px;
+}
+.factura-head p {
+    margin-top: 25px;
+    color: white;
+}
+
+.factura-body {
+    margin-bottom: 10px;
+}
+.factura-body h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #4B545B;
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 600;
+}
+.factura-body h1 + p {
+    font-size: 15px;
+    color: #566069;
+}
+
+.factura-body-bottom {
+    margin-left: 10px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+.btn-fact {
+    width: 200px;
+    height: 40px;
+    background-color: #69859D;
+    border:none;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Condensed',  sans-serif;
+    font-size: 1em;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.factura-body-bottom p {
+    grid-column: 3;
+    color: #4B545B;
+    text-align: center;
+
+}
+
+.btn-fact:hover {
+    background-color: #80a3c2;
+}
+
+.btn-fact:active {
+    background-color: #4d6375;
+}
