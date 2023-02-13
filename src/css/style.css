@@ -55,8 +55,8 @@ body {
     grid-template-areas: "nav"
                          "main"
                          "footer";
+    background-image: url(../img/Visiwig-Chevron-Alternates.svg);
 }
-
 header {
     grid-row: 1;
     height: 5.5em;

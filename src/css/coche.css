@@ -1,6 +1,4 @@
-body {
-    background-image: url(../Visiwig-Chevron-Alternates.svg);
-}
+
 
 main {
     display: grid;
@@ -161,11 +159,10 @@ main {
 
 .cal {
     grid-area: cal;
-    background-image: url(../calendario.png);
+    background-image: url(../img/calendario.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    border: 1px solid #69859D;
     border-radius: 10px;
     
 }
