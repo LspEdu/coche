@@ -25,3 +25,8 @@
     - BS5 (login-bs.html)
     - Google Fonts
     - Mdn WebDocs
+
+
+## Cambios
+
+    - Integrada la etiqueta picture en index.html

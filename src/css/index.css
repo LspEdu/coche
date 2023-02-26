@@ -17,37 +17,18 @@ main {
     flex-direction: row-reverse;
 }
 
-@media screen and (max-width: 1024px) {
-    main {
-        gap: 20px;
-        justify-content: space-around;
-    }
 
-    .title {
-        text-align: center;
-    }
 
-    .medio {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .peu {
-        width: 50%;
-        margin: auto;
-    }
-    .title h1 {
-        width: fit-content;
-    }
-}
 .title {
     background-color: #F5F5F5;
     border-radius: 0px 50em 50em 0px;
     box-shadow: 1px 10px 20px rgba(0,0,0,0.75);
     min-width: 250px;
     width: fit-content;
+    
 
 }
+
 
 .title h1 {
 
@@ -64,7 +45,7 @@ main {
 .card {
     grid-area: card;
     background-color: #566069;
-    height: 500px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -77,6 +58,7 @@ main {
 }
 
 .card-head {
+    padding-top: 20px;
     font-size: 2.5em;
     font-weight: 900;
 }
@@ -92,6 +74,12 @@ main {
     font-size: 1.5em;
 }
 
+.card-body video {
+    width: 100%;
+    border: 1px solid #F5F5F5;
+    border-radius: 10px;
+}
+
 .peu {
     position: relative;
     width: 50%;
@@ -101,15 +89,23 @@ main {
 }
 
 .peu img {
+    cursor: grab;
+    padding-top: 100px;
     width: 100%;
     max-width: 800px;
     min-width: 200px;
+    transition: 0.5s;
+}
+
+.peu :hover {
+    filter: sepia(20%);
 }
 
 .peu span {
     width: 15vw;
     min-width: 200px;
     border-radius: 50em;
+    height: 50px;
     text-align: center;
     background-color: #F5F5F5;
     font-family: 'Roboto Condensed', sans-serif;
@@ -202,4 +198,33 @@ main {
     width: 1px;
     background-color: #F5F5F5;
     border-radius: 10px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    main {
+        gap: 20px;
+        justify-content: space-around;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .medio {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .peu {
+        width: 50%;
+        margin: auto;
+    }
+
+    .peu span {
+        height: auto;
+    }
+    .title h1 {
+        width: fit-content;
+    }
 }

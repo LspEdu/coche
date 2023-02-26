@@ -16,12 +16,13 @@
     <link rel="stylesheet" href="../src/css/style.css">
     <link rel="stylesheet" href="../src/css/coche.css">
     <link rel="stylesheet" href="../src/css/navsmall.css">
+    <link rel="shortcut icon" href="../src/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <nav id="big">
             <div class="links">
-               <a href="./index.html"><img src="../src/img/alcar.png" alt=""></a>
+               <a href="./index.html"><img src="../src/img/logotipo.svg" alt=""></a>
                <a href="./index.html">Inicio</a>
                <a href="./factura.html">Facturas</a>
                <a href="./coches.html">Coches</a>
@@ -53,7 +54,7 @@
             </div></li>
             </ul>
            </div>
-           <div><a href="./index.html"><img src="../src/img/alcar.png" alt=""></a></div>
+           <div><a href="./index.html"><img src="../src/img/logotipo.svg" alt=""></a></div>
           </nav>
     </header>
     <main>
@@ -61,7 +62,10 @@
             <h1>Peugeot 208</h1>
         </div>
         <div class="coche">
-            <img src="../src/img/peugeot208.png" alt="peugeot208">
+            <picture>
+                <source media="(min-width: 1024px )" srcset="../src/img/peugeot208.png">
+                <img src="../src/img/peugeot208.png" alt="peugeot208">
+            </picture>
         </div>
         <div class="reservas">
             <div class="fec">
