@@ -30,3 +30,15 @@
 ## Cambios
 
     - Integrada la etiqueta picture en index.html
+
+## Transiciones y Animaciones
+
+    - En todas las páginas el logo aparece progresivamente
+    - Todos los menus del navbar tienen transiciones
+    - El título de index.html tiene animación
+    - Los coches en index.html tienen transiciones
+
+## Elementos Interactivos
+
+    - <details> añadido en index.html Linea 77
+    - <dialog> añadido en coches.html como modal Linea 61
