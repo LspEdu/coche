@@ -15,12 +15,13 @@
     <link rel="stylesheet" href="../src/css/style.css">
     <link rel="stylesheet" href="../src/css/coches.css">
     <link rel="stylesheet" href="../src/css/navsmall.css">
+    <link rel="shortcut icon" href="../src/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <nav id="big">
             <div class="links">
-               <a href="./index.html"><img src="../src/img/alcar.png" alt=""></a>
+               <a href="./index.html"><img src="../src/img/logotipo.svg" alt=""></a>
                <a href="./index.html">Inicio</a>
                <a href="./factura.html">Facturas</a>
                <a href="./coches.html">Coches</a>
@@ -52,12 +53,24 @@
             </div></li>
             </ul>
            </div>
-           <div><a href="./index.html"><img src="../src/img/alcar.png" alt=""></a></div>
+           <div><a href="./index.html"><img src="../src/img/logotipo.svg" alt=""></a></div>
           </nav>
     </header>
     <main>
         <div class="scrl">
-            <h1>Deportivos</h1>
+            <h1>Deportivos <button id="updateDetails">¿Falta Alguno?</button></h1>
+            <dialog id="favDialog">
+                <form method="dialog">
+                  <section>
+                    <p>Correo de Contacto: <a href="mailto:eduardo.lopez.manga@iesdonana.org">eduardo.lopez.manga@iesdonana.org</a></p>
+                    <input type="text" class="sug" id="sug" placeholder="¡O escribe ahora lo que necesites!">
+                  </section>
+                  <menu>
+                    <button id="cancel" type="reset">Cancelar</button>
+                    <button type="submit">Enviar</button>
+                  </menu>
+                </form>
+              </dialog>
             <div class="scrollmost">
                 <div class="space"></div>
                 <a href="./coche.html" class="coche">
@@ -133,6 +146,23 @@
         <div class="space"></div>
         <h1>Alcar 2023</h1>
     </footer>
-    
+    <script>
+        (function() {
+          var updateButton = document.getElementById('updateDetails');
+          var cancelButton = document.getElementById('cancel');
+          var favDialog = document.getElementById('favDialog');
+      
+          // Update button opens a modal dialog
+          updateButton.addEventListener('click', function() {
+            favDialog.showModal();
+          });
+      
+          // Form cancel button closes the dialog box
+          cancelButton.addEventListener('click', function() {
+            favDialog.close();
+          });
+      
+        })();
+      </script>
 </body>
 </html>

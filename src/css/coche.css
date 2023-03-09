@@ -67,14 +67,19 @@ main {
 
 .coche {
     grid-area: co;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     width: 100%;
     height: 100%;
 }
 
-.coche img {
+.coche picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.coche img ,
+.coche source{
     width: 70%;
     border-radius: 10px;
    
