@@ -125,7 +125,7 @@ nav div a{
     font-size: 1rem;
 }
 
-nav div a:hover  {
+nav div a:hover:not(nav a:first-child)  {
     background-color: #69859D;
     padding: 10px;
     border-radius: 10px;
