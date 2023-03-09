@@ -30,6 +30,10 @@
 ## Cambios
 
     - Integrada la etiqueta picture en index.html
+    - Filtro añadido en el peugeot
+    - Video en index.html
+    - Video de fondo en login.html
+    - Sonido de fondo en login.html
 
 ## Transiciones y Animaciones
 
